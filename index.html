@@ -1,9 +1,171 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title> HTML Page</title>
-  </head>
-  <body>
-    <h1>Main page of imillanj.github.io</h1>
-  </body>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thesis Webpage</title>
+<style>
+  /* body {
+    font-family: Arial, sans-serif;
+  } */
+  .nav-buttons {
+    margin-bottom: 20px;
+  }
+</style>
+
+<link rel="stylesheet" href="styles/header.css">
+<link rel="stylesheet" href="styles/footer.css">
+<link rel="stylesheet" href="styles/content.css">
+<link rel="stylesheet" href="styles/helpers.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <div class="header-wrapper">
+
+        <div class="explore-wrapper">
+
+            <div class="header-logo">
+                <a href="https://www.unav.edu/"><img src="images/logos/logo.png" alt="Codepen logo"></a>
+            </div>
+            
+            <div class="explore-content">
+                <div class="explore-text">
+                    <span>Iker Millan</span>
+                </div>
+    
+                <div class="links-wrapper">
+                    <button id="mainBtn" onclick="showContent('main')">Main</button>
+                    <button id="thesisBtn" onclick="showContent('thesis')">Thesis</button>
+                    <button id="biographyBtn" onclick="showContent('biography')">Biography</button>
+                    <button id="contactBtn" onclick="showContent('contact')">Contact</button>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div id="main" class="content-section active">
+        <div class="main-wrapper">
+            <div class="text-head">
+                <h1>Welcome to <span class="name-text">Iker Millan</span>'s Personal Webpage</h1>
+            </div>
+            
+            <div class="spacer15"></div>
+            <div class="text-body">
+                <p>Discover the journey of my academic and professional life through this simple yet insightful webpage. Here, you will find a comprehensive summary of my thesis work, an in-depth biography, and all the ways you can get in touch with me. This page is designed to give you a snapshot of my achievements, interests, and the path I’ve taken in my career. This page is divided in four main windows:</p>
+                <div class="spacer10"></div>
+                <ul><span class="list-item">Main:</span> This page.</ul>
+                <ul><button id="thesisBtn" onclick="showContent('thesis')">Thesis:</button> This page contains information the PhD.</ul>
+                <ul><button id="biographyBtn" onclick="showContent('biography')">Biography:</button> This page contains nformation on the studies.</ul>
+                <ul><button id="contactBtn" onclick="showContent('contact')">Contact:</button> This page contains the contact and socials.</ul>
+                <div class="spacer10"></div>
+                <p>Feel free to explore each section and learn more about my passion for research, my background, and how we can connect. Thank you for visiting!</p>
+            </div>
+    
+            
+        </div> 
+        <div class="spacer60"></div>
+    </div>
+
+    <div id="thesis" class="content-section">
+        <div class="thesis-wrapper">
+            <div class="thesis-text">
+                <div class="text-head"><h1>Thesis</h1></div>
+                <p>In this section, you will find an overview of my thesis work, which delves into the intricacies of <span class="thesis-title">Map-Matching for Train localisation</span>. My research focuses on the concept of <span class="thesis-keyword">Digital Maps</span>, aiming to being able to locate the trai with just <span class="thesis-keyword">Onboard Sensors</span>.
+                </p>
+                <p>Eventhough my journey through the PhD has just started, the months of extended research have veen fruitful. I have researched extensively the state-of-the-art approaches of map-matching for train localisation, and have managed to write a scientific paper, eventhough this has not been published yet. Hereunder I present the abstract of my recent work:</p>
+                <p class="thesis-abstract"><p>Precise localisation of rail vehicles is a key element towards the development and deployment of novel train control systems. Localisation of trains can be considered as a 1-D positioning problem, as trains only move on tracks, easing the localisation approach. 
+                </p>
+                <p>Localisation with maps makes a great choice as the maps describe unambiguously train tracks, easing the train localisation and making it an effective choice. On top of that, train localisation with a map requires just onboard sensors making it a low-cost alternative to localisation with track-side equipment, as this equipment makes train positioning costs increase with the reach of the use. 
+                </p>
+                <p>Even though this topic has been widely studied in the literature, there has not been a classification of the used methodologies for map-matching for train positioning. Therefore, the purpose of this paper is to make a classification of the used map-matching algorithms for train localisation. On top of that, this paper also discusses how to build a digital map from a set of coordinates. 
+                </p>
+                </p>
+                <div class="spacer15"></div>
+            </div>
+            <div class="thesis-img">
+                <img src="images/homepage/Train.jpg" alt="Codepen logo">
+            </div>
+        </div>
+
+    </div>
+
+    <div id="biography" class="content-section">
+        <div class="biography-wrapper">
+            <div class="biography-text">
+                <div class="text-head"><h1>Biography</h1></div>
+                <p>Welcome to my biography section! Here, you can learn more about my background, education, and the journey that has shaped who I am today.</p>
+                <p>I was born and raised in Donosti, where I developed a keen interest in maps from a young age. My curiosity and passion for mathematics and its importance on the real world led me to pursue a degree in Industrial Engineering from Bilbao School of Engineering. During my time at university, I had the opportunity to work on various projects and collaborate with esteemed professionals, which significantly enriched my knowledge and experience. </p>
+                <p>After completing my undergraduate studies, I furthered my academic journey by obtaining a Master’s degree in Industrial Engineering specialized in automation, electronics and robotics,  from Bilbao School of Engineering. During my time in the master's program, I had the opportunity to delve deeper into software development and deep learning and work on advanced projects.</p>
+                <p>After graduating, I was granted an internship in a peruvian business as a softwware developer, where I have worked on numerous exciting and challenging projects. The internship has allowed me to grow both personally and professionally.</p>
+                <p>Thank you for taking the time to read my biography. I hope it gives you a better understanding of my journey and the experiences that have shaped my path.</p>
+            </div>
+            <div class="biography-image">
+                <img src="images/homepage/Iker coorp.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="content-section">
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <div class="text-head"><h1>Contact</h1></div>
+                <p>Thank you for visiting my webpage. I’d love to hear from you! Whether you have questions, comments, or just want to connect, feel free to reach out through any of the methods below:</p>
+                <ul><i class="fas fa-phone"></i> (+34) 666 666 666</ul>
+                <ul><i class="fas fa-envelope"></i> imillanji@ceit.es</ul>
+                <ul><i class="fas fa-map-pin"></i> Mikeletegi Pasealekua, 48, 20009 Donostia</ul>
+                <ul><a href="https://orcid.org/my-orcid?orcid=0009-0007-0970-699X"><i class="fab fa-orcid"></i> Orcid</a></ul>
+            </div>
+            
+            <div class="contact-place">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23232.98306465893!2d-2.008892785385917!3d43.29074822969796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51afde7e1421cd%3A0x1da2ea8909de8dab!2sCentro%20Tecnol%C3%B3gico%20CEIT%20y%20Tecnun%20Sede%20Miramon!5e0!3m2!1ses!2ses!4v1717932272048!5m2!1ses!2ses" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+               
+        </div>
+    </div>
+
+
+    <div class="footer-wrapper">
+            <div class="footer">
+                <div class="footer-logo">
+                    <a href="https://www.unav.edu/"><img src="images/logos/logo.png" alt="Codepen logo"></a>
+                </div>
+                
+                <div class="footer-text">
+                    <span>Iker Millan's PhD webpage</span>
+                </div>
+    
+            </div>
+    </div>
+
+    <script>
+        function showContent(sectionId) {
+          // Hide all content sections
+          const sections = document.querySelectorAll('.content-section');
+          sections.forEach(section => {
+            section.classList.remove('active');
+          });
+          
+          // Show the selected section
+          document.getElementById(sectionId).classList.add('active');
+      
+          // Reset all buttons to their default state
+          const buttons = document.querySelectorAll('.links-wrapper button');
+          buttons.forEach(button => {
+            button.classList.remove('active');
+          });
+      
+          // Set the clicked button to active state
+          document.getElementById(sectionId + 'Btn').classList.add('active');
+        }
+        window.onload = function() {
+            // Set the initial active button to Main
+            document.getElementById('mainBtn').classList.add('active');
+        };
+      </script>
+      
+
+</body>
 </html>

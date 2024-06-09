@@ -1,0 +1,100 @@
+.content-section {
+    display: none;
+    padding: 20px;
+  }
+  .content-section.active {
+    display: block;
+    background: rgb(77,85,87);
+    background: linear-gradient(98deg, rgba(77,85,87,1) 7%, rgba(122,122,148,1) 26%, rgb(62, 61, 98) 52%);
+  }
+
+  .text-head{
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+
+  /* Main */
+  #main {
+    color: black;
+  }
+
+  .main-wrapper{
+    padding-left: 50px;
+  }
+
+  #main .name-text{
+    font-weight: 800;
+    color: #cea135;
+  }
+  #main .list-item{
+    text-decoration: underline;
+    font-weight: 700;
+  }
+  #main .text-body button{
+    border: none;
+    cursor: pointer;
+    background: none;
+    padding: 0;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+  #main .text-body button:hover{
+    text-decoration: underline;
+    font-weight: 800;
+  }
+
+  /* Thesis */
+
+  .thesis-wrapper{
+    display: flex;
+  }
+
+  .thesis-text{
+    padding-left: 50px;
+  }
+
+  .thesis-title{
+    color: #cea135;
+    font-weight: 700;
+  }
+
+  .thesis-keyword{
+    text-decoration: underline;
+    font-weight: 600;
+  }
+  .thesis-abstract{
+    font-style: italic;
+  }
+  #thesis img{
+    height: 200px;
+    padding: 100px 20px 100px 50px;
+    transform: scaleX(-1);
+  }
+
+  /* Biography */
+  .biography-wrapper{
+    display: flex;
+  }
+  .biography-text{
+    padding-left: 50px;
+  }
+
+  #biography img{
+    height: 350px;
+    padding: 100px 20px 100px 50px;
+  }
+
+  /* Contact */
+  .contact-wrapper{
+    display: flex;
+  }
+
+  .contact-info{
+    padding-left: 50px;
+  }
+  .contact-info a{
+    color: black;
+  }
+  .contact-place{
+    padding: 100px 20px 100px 50px;
+  }
